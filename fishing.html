@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/fishing.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Odor+Mean+Chey&display=swap" rel="stylesheet">
+  <title>WEBET9151 Website</title>
+  <style>
+    
+
+  </style>
+  
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="img/webet_logo-01.png" alt="Logo" >
+      <h1>WEBET9151<br><small>WEBET9151.com</small></h1>
+    </div>
+
+    <div class="header-right">
+      <div class="login">
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <button id="signin-btn">Sign In</button>
+      </div>
+      <!-- Dropdown -->
+      <select class="lang-select" onchange="setLanguage(this.value)">
+        <option value="en">English</option>
+        <option value="km">ខ្មែរ</option>
+      </select>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html" class="active"><img src="icon/booking_60px.png" alt=""><span id="nav-home" >HOME</span></a>
+    <a href="casino.html"><img src="icon/cards_80px.png" alt=""><span id="nav-casino" >CASINO</span></a>
+    <a href="sportsbook.html"><img src="icon/soccer_ball_60px.png" alt=""><span id="nav-sports" >SPORTSBOOK</span></a>
+    <a href="lotto.html"><img src="icon/billiard_ball_128px.png" alt=""><span id="nav-lotto" >LOTTO</span></a>
+    <a href="cockfight.html"><img src="icon/cockscomb_96px.png" alt=""><span id="nav-cockfight" >COCKFIGHT</span></a>
+    <a href="game.html"><img src="icon/slot_machine_96px.png" alt=""><span id="nav-games" >GAMES</span></a>
+    <a href="fishing.html"><img src="icon/fishing_pole_emoji_96px.png" alt=""><span id="nav-fishing" style="color: rgb(255, 200, 0);">FISHING</span></a>
+  </nav>
+
+  <!-- Marquee -->
+  <div class="marquee">
+    <span id="marquee-text">🔊 We wish you good luck and have a beautiful day... Welcome To WEBET9151 🔊</span>
+  </div>
+
+  <!-- Slideshow -->
+  <section class="hero">
+    <div class="slideshow-container">
+      <div class="slides"><img src="img/1.png" alt="Slide 1"></div>
+      <div class="slides"><img src="img/2.png" alt="Slide 2"></div>
+      <div class="slides"><img src="img/3.png" alt="Slide 3"></div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+    <script>
+      let slideIndex = 1;
+    showSlides(slideIndex);
+    function plusSlides(n) { showSlides(slideIndex += n); }
+    function currentSlide(n) { showSlides(slideIndex = n); }
+    function showSlides(n) {
+      let i, slides = document.getElementsByClassName("slides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) slides[i].style.display = "none";
+      for (i = 0; i < dots.length; i++) dots[i].className = dots[i].className.replace(" active", "");
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+    setInterval(() => { plusSlides(1); }, 3000);
+    </script>
+  </section>
+
+  <!-- ==========================================section card========================== -->
+   <!-- ================menu==================== -->
+
+  <div class="menu">
+    <div class="category-buttons">
+      <button id="qqBtn" class="active">
+        QQ GAMING
+      </button>
+      <button id="jiliBtn">
+        JILI GAMES
+      </button>
+      <button id="allBtn">
+        ALL GAMES
+      </button>
+    </div>
+  </div>
+  <div class="li"></div>
+
+  <div class="games-container">
+    <!-- QQ GAMING Games -->
+    <div id="qqGames" class="games">
+      <!-- ====================card1======================================= -->
+      <a href="#">
+        <div class="game-card fade-in">
+        <div class="game-image">
+          <!-- Fixed image source for Lucky Fishing -->
+          <img src="img/4.png" alt="Lucky Fishing">
+          
+        </div>
+        <div class="game-info">
+          <h3 class="game-title" style="color: aliceblue;">Lucky Fishing</h3>
+        </div>
+      </div>
+      </a>
+      <!-- ====================card2======================================= -->
+      <div class="game-card fade-in">
+        <div class="game-image">
+          <!-- Fixed image source for Lucky Fishing -->
+          <img src="img/4.png" alt="Lucky Fishing">
+          
+        </div>
+        <div class="game-info">
+          <h3 class="game-title">Lucky Fishing</h3>
+        </div>
+      </div>
+      
+      <!-- ====================card3======================================= -->
+      <div class="game-card fade-in">
+        <div class="game-image">
+          <!-- Fixed image source for Lucky Fishing -->
+          <img src="img/4.png" alt="Lucky Fishing">
+          
+        </div>
+        <div class="game-info">
+          <h3 class="game-title">Lucky Fishing</h3>
+        </div>
+      </div>
+      <!-- ====================card4======================================= -->
+      <div class="game-card fade-in">
+        <div class="game-image">
+          <!-- Fixed image source for Lucky Fishing -->
+          <img src="img/4.png" alt="Lucky Fishing">
+          
+        </div>
+        <div class="game-info">
+          <h3 class="game-title">Lucky Fishing</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- JILI Games -->
+    <div id="jiliGames" class="games hidden">
+      <!-- ====================card1======================================= -->
+      <div class="game-card fade-in">
+        <div class="game-image">
+          <!-- Fixed image source for Lucky Fishing -->
+          <img src="img/4.png" alt="Lucky Fishing">
+          
+        </div>
+        <div class="game-info">
+          <h3 class="game-title">Lucky Fishing</h3>
+        </div>
+      </div>
+      <!-- ====================card2======================================= -->
+      <div class="game-card fade-in">
+        <div class="game-image">
+          <!-- Fixed image source for Lucky Fishing -->
+          <img src="img/4.png" alt="Lucky Fishing">
+          
+        </div>
+        <div class="game-info">
+          <h3 class="game-title">Lucky Fishing</h3>
+        </div>
+      </div>
+      <!-- ====================card3======================================= -->
+      <div class="game-card fade-in">
+        <div class="game-image">
+          <!-- Fixed image source for Lucky Fishing -->
+          <img src="img/4.png" alt="Lucky Fishing">
+          
+        </div>
+        <div class="game-info">
+          <h3 class="game-title">Lucky Fishing</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // DOM Elements
+    const qqBtn = document.getElementById('qqBtn');
+    const jiliBtn = document.getElementById('jiliBtn');
+    const allBtn = document.getElementById('allBtn');
+    const qqGames = document.getElementById('qqGames');
+    const jiliGames = document.getElementById('jiliGames');
+    const searchInput = document.getElementById('searchInput');
+    const gameCards = document.querySelectorAll('.game-card');
+    
+    // Category switching function
+    function switchCategory(activeCategory) {
+      // Update buttons
+      [qqBtn, jiliBtn, allBtn].forEach(btn => btn.classList.remove('active'));
+      activeCategory.classList.add('active');
+      
+      // Show appropriate games
+      if (activeCategory === qqBtn) {
+        qqGames.classList.remove('hidden');
+        jiliGames.classList.add('hidden');
+      } else if (activeCategory === jiliBtn) {
+        jiliGames.classList.remove('hidden');
+        qqGames.classList.add('hidden');
+      } else {
+        qqGames.classList.remove('hidden');
+        jiliGames.classList.remove('hidden');
+      }
+    }
+    
+    
+    // Event Listeners
+    qqBtn.addEventListener('click', () => switchCategory(qqBtn));
+    jiliBtn.addEventListener('click', () => switchCategory(jiliBtn));
+    allBtn.addEventListener('click', () => switchCategory(allBtn));
+    
+    searchInput.addEventListener('input', filterGames);
+    
+    // Simulate click on game cards (would normally navigate to game)
+    gameCards.forEach(card => {
+      card.addEventListener('click', () => {
+        const gameName = card.querySelector('.game-title').textContent;
+        alert(`Launching ${gameName}... (This would navigate to the game in a real implementation)`);
+      });
+    });
+  </script>
+
+  <!-- ==========================footer================== -->
+    <footer>
+    <p id="footer-text">
+        We provide our members with <b>LIVE CASINO, LIVE SPORTS, COCKFIGHT, LOTTO</b> 
+        and <b>SLOT GAMES</b>. We are committed to providing you the best value in whatever your game may be. 
+        <br>With a combination of technology expertise and market experience, 
+        we are the licensed name that you can trust for long term entertainment service.
+    </p>
+
+    <div class="footer-links">
+        <a href="#" id="footer-responsible">RESPONSIBLE GAMBLING</a> | 
+        <a href="#" id="footer-terms">TERMS AND CONDITIONS</a> | 
+        <a href="#" id="footer-contact">CONTACT US</a>
+    </div>
+
+    <div class="copyright">
+        <span id="footer-copy">@WEBWT9151</span>
+    </div>
+    </footer>
+  
+  </body>
+</html>

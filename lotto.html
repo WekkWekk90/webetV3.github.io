@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/lotto.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Odor+Mean+Chey&display=swap" rel="stylesheet">
+  <title>WEBET9151 Website</title>
+  <style>
+    
+
+  </style>
+  
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="img/webet_logo-01.png" alt="Logo" >
+      <h1>WEBET9151<br><small>WEBET9151.com</small></h1>
+    </div>
+
+    <div class="header-right">
+      <div class="login">
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <button id="signin-btn">Sign In</button>
+      </div>
+      <!-- Dropdown -->
+      <select class="lang-select" onchange="setLanguage(this.value)">
+        <option value="en">English</option>
+        <option value="km">ខ្មែរ</option>
+      </select>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html" class="active"><img src="icon/booking_60px.png" alt=""><span id="nav-home" >HOME</span></a>
+    <a href="casino.html"><img src="icon/cards_80px.png" alt=""><span id="nav-casino" >CASINO</span></a>
+    <a href="sportsbook.html"><img src="icon/soccer_ball_60px.png" alt=""><span id="nav-sports" >SPORTSBOOK</span></a>
+    <a href="lotto.html"><img src="icon/billiard_ball_128px.png" alt=""><span id="nav-lotto" style="color: rgb(255, 200, 0);">LOTTO</span></a>
+    <a href="cockfight.html"><img src="icon/cockscomb_96px.png" alt=""><span id="nav-cockfight">COCKFIGHT</span></a>
+    <a href="game.html"><img src="icon/slot_machine_96px.png" alt=""><span id="nav-games">GAMES</span></a>
+    <a href="fishing.html"><img src="icon/fishing_pole_emoji_96px.png" alt=""><span id="nav-fishing">FISHING</span></a>
+  </nav>
+
+  <!-- Marquee -->
+  <div class="marquee">
+    <span id="marquee-text">🔊 We wish you good luck and have a beautiful day... Welcome To WEBET9151 🔊</span>
+  </div>
+
+  <!-- Slideshow -->
+  <section class="hero">
+    <div class="slideshow-container">
+      <div class="slides"><img src="img/1.png" alt="Slide 1"></div>
+      <div class="slides"><img src="img/2.png" alt="Slide 2"></div>
+      <div class="slides"><img src="img/3.png" alt="Slide 3"></div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+    <script>
+      let slideIndex = 1;
+    showSlides(slideIndex);
+    function plusSlides(n) { showSlides(slideIndex += n); }
+    function currentSlide(n) { showSlides(slideIndex = n); }
+    function showSlides(n) {
+      let i, slides = document.getElementsByClassName("slides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) slides[i].style.display = "none";
+      for (i = 0; i < dots.length; i++) dots[i].className = dots[i].className.replace(" active", "");
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+    setInterval(() => { plusSlides(1); }, 3000);
+    </script>
+  </section>
+  <!-- ========================categories============================ -->
+  <section>
+    <h2 id="lotto-title">SWC88 LOTTO</h2>
+  <div class="containerl">
+    
+    <!-- Card 1 -->
+    <div class="cardl">
+      <img src="img/2.png" alt="Lotto 6/36">
+        <div class="contentl">
+            <div class="header">
+                <span>Lotto 20/80</span>
+                <div class="score">
+                <span class="blue">U 110</span>
+                <span class="red">O 99</span>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="blue-ball">
+                    <img src="img/1.png" alt="">
+                </div>
+                
+            </div>
+            <div class="bottom">
+                <div class="play-btn">PLAY NOW</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="cardl">
+      <img src="img/2.png" alt="Lotto 6/36">
+        <div class="contentl">
+            <div class="header">
+                <span>Lotto 20/80</span>
+                <div class="score">
+                <span class="blue">U 110</span>
+                <span class="red">O 99</span>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="blue-ball">
+                    <img src="img/1.png" alt="">
+                </div>
+                
+            </div>
+            <div class="bottom">
+                <div class="play-btn">PLAY NOW</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="cardl">
+      <img src="img/2.png" alt="Lotto 6/36">
+        <div class="contentl">
+            <div class="header">
+                <span>Lotto 20/80</span>
+                <div class="score">
+                <span class="blue">U 110</span>
+                <span class="red">O 99</span>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="blue-ball">
+                    <img src="img/1.png" alt="">
+                </div>
+                
+            </div>
+            <div class="bottom">
+                <div class="play-btn">PLAY NOW</div>
+            </div>
+        </div>
+    </div>
+    <!-- card 4 -->
+     <div class="cardl">
+      <img src="img/2.png" alt="Lotto 6/36">
+        <div class="contentl">
+            <div class="header">
+                <span>Lotto 20/80</span>
+                <div class="score">
+                <span class="blue">U 110</span>
+                <span class="red">O 99</span>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="blue-ball">
+                    <img src="img/1.png" alt="">
+                </div>
+                
+            </div>
+            <div class="bottom">
+                <div class="play-btn">PLAY NOW</div>
+            </div>
+        </div>
+    </div>
+
+  </div>
+  </section>
+    <!-- ==========================footer================== -->
+    <footer>
+    <p id="footer-text">
+        We provide our members with <b>LIVE CASINO, LIVE SPORTS, COCKFIGHT, LOTTO</b> 
+        and <b>SLOT GAMES</b>. We are committed to providing you the best value in whatever your game may be. 
+        <br>With a combination of technology expertise and market experience, 
+        we are the licensed name that you can trust for long term entertainment service.
+    </p>
+
+    <div class="footer-links">
+        <a href="#" id="footer-responsible">RESPONSIBLE GAMBLING</a> | 
+        <a href="#" id="footer-terms">TERMS AND CONDITIONS</a> | 
+        <a href="#" id="footer-contact">CONTACT US</a>
+    </div>
+
+    <div class="copyright">
+        <span id="footer-copy">@WEBWT9151</span>
+    </div>
+    </footer>
+  
+  </body>
+</html>
